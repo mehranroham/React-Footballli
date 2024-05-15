@@ -6,6 +6,12 @@ export const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
-    children: [{ path: '/', element: <Matches /> }],
+    children: [
+      { path: '/', element: <Matches /> },
+      {
+        path: '*',
+        element: <Matches />,
+      },
+    ],
   },
 ]);

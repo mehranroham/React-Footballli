@@ -1,4 +1,3 @@
-import React from 'react';
 import { Outlet } from 'react-router-dom';
 import '../index.css';
 import Header from '../components/Header';
@@ -8,7 +7,7 @@ export default function Layout() {
   return (
     <>
       <Header />
-      <main className='font-Dana w-full min-h-[calc(100vh_-_180px)] '>
+      <main className='font-Dana w-full pb-20 min-h-[calc(100vh_-_60px)] bg-gray-300'>
         <Outlet />
       </main>
       <Footer />
